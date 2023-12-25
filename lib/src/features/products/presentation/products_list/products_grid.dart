@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:ecommerce_app/src/constants/test_products.dart';
 import 'package:ecommerce_app/src/features/products/presentation/product_screen/product_screen.dart';
 import 'package:ecommerce_app/src/features/products/presentation/products_list/product_cart.dart';
@@ -29,11 +28,11 @@ class ProductsGrid extends StatelessWidget {
               return ProductCart(
                 product: product,
                 onPressed: () {
-                  // Navigator.of(context).push(MaterialPageRoute(
-                  //   builder: (context) => ProductScreen(
-                  //     productId: product.id,
-                  //   ),
-                  // ));
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ProductScreen(
+                      productId: product.id,
+                    ),
+                  ));
                 },
               );
             },
