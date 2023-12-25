@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       restorationScopeId: 'app',
-      // * The home page of the app
-      home: const ProductsListScreen(),
       onGenerateTitle: (BuildContext context) => 'My Shop',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
+      // * The home page of the app
+      home: const ProductsListScreen(),
     );
   }
 }
