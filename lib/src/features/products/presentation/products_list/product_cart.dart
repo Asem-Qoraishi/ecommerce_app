@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/src/constants/app_sizes.dart';
 import 'package:ecommerce_app/src/core/utils/currency_formater.dart';
+import 'package:ecommerce_app/src/core/widgets/custom_image.dart';
 import 'package:ecommerce_app/src/features/products/domain/product.dart';
 import 'package:ecommerce_app/src/features/products/presentation/product_screen/product_average_rating.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class ProductCart extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset(product.imageUrl),
+              CustomImage(imageUrl: product.imageUrl),
               gapH8,
               const Divider(),
               gapH8,
