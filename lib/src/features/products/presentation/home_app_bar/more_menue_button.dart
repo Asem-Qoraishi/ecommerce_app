@@ -15,6 +15,7 @@ class MoreMenueButton extends StatelessWidget {
   static const accountKey = Key('menuAccount');
   @override
   Widget build(BuildContext context) {
+    final textTheme = Theme.of(context).textTheme;
     return PopupMenuButton<PopupMenuOption>(
       icon: Icon(
         Icons.more_vert,
@@ -23,22 +24,31 @@ class MoreMenueButton extends StatelessWidget {
       itemBuilder: (context) {
         return user != null
             ? <PopupMenuEntry<PopupMenuOption>>[
-                const PopupMenuItem(
+                PopupMenuItem(
                   key: ordersKey,
                   value: PopupMenuOption.orders,
-                  child: Text('Orders'),
+                  child: Text(
+                    'Orders',
+                    style: textTheme.bodySmall,
+                  ),
                 ),
-                const PopupMenuItem(
+                PopupMenuItem(
                   key: accountKey,
                   value: PopupMenuOption.account,
-                  child: Text('Account'),
+                  child: Text(
+                    'Account',
+                    style: textTheme.bodySmall,
+                  ),
                 )
               ]
             : <PopupMenuEntry<PopupMenuOption>>[
-                const PopupMenuItem(
+                PopupMenuItem(
                   key: signInKey,
                   value: PopupMenuOption.signIn,
-                  child: Text('Sign In'),
+                  child: Text(
+                    'Sign In',
+                    style: textTheme.bodySmall,
+                  ),
                 ),
               ];
       },

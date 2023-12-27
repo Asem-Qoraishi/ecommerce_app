@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/src/features/cart/presentation/shopping_cart/shopping_cart_screen.dart';
 import 'package:flutter/material.dart';
 
 class ShoppingCartIcon extends StatelessWidget {
@@ -16,6 +17,12 @@ class ShoppingCartIcon extends StatelessWidget {
         icon: const Icon(Icons.shopping_cart),
         onPressed: () {
           //TODO Navigate to ShoppingCartScreen
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ShoppingCartScreen(),
+            ),
+          );
         },
       ),
     );
