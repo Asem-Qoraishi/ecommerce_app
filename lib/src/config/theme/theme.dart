@@ -14,6 +14,9 @@ class AppTheme {
     brightness: Brightness.light,
     scaffoldBackgroundColor: AppLightColors.primaryColor,
     primaryColor: AppLightColors.primaryColor,
+    cardTheme:
+        const CardTheme().copyWith(surfaceTintColor: AppLightColors.secondryColor, color: AppLightColors.secondryColor),
+    popupMenuTheme: const PopupMenuThemeData().copyWith(color: AppLightColors.secondryColor),
     dividerColor: AppLightColors.borderColor,
     elevatedButtonTheme: ElevatedBtnTheme.lightTheme,
     inputDecorationTheme: TextFieldTheme.lightTheme,
@@ -27,6 +30,8 @@ class AppTheme {
     brightness: Brightness.dark,
     scaffoldBackgroundColor: AppDarkColors.primaryColor,
     primaryColor: AppDarkColors.primaryColor,
+    cardColor: AppDarkColors.secondryColor,
+    popupMenuTheme: const PopupMenuThemeData().copyWith(color: AppDarkColors.secondryColor),
     dividerColor: AppDarkColors.borderColor,
     elevatedButtonTheme: ElevatedBtnTheme.darkTheme,
     inputDecorationTheme: TextFieldTheme.darkTheme,
