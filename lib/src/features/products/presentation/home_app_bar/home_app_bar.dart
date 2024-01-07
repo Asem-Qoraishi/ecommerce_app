@@ -1,5 +1,6 @@
 import 'package:ecommerce_app/src/constants/breakpoints.dart';
 import 'package:ecommerce_app/src/core/widgets/action_text_button.dart';
+import 'package:ecommerce_app/src/features/orders/presentation/orders-list/orders_list_screen.dart';
 import 'package:ecommerce_app/src/features/products/presentation/home_app_bar/more_menue_button.dart';
 import 'package:ecommerce_app/src/features/products/presentation/home_app_bar/shopping_cart_icon.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,13 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
             ActionTextButton(
               key: MoreMenueButton.ordersKey,
               text: 'Orders',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const OrdersListScreen(),
+                    ));
+              },
             ),
             ActionTextButton(
               key: MoreMenueButton.accountKey,
