@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/src/features/orders/presentation/orders-list/orders_list_screen.dart';
 import 'package:flutter/material.dart';
 
 enum PopupMenuOption {
@@ -51,6 +52,20 @@ class MoreMenueButton extends StatelessWidget {
                   ),
                 ),
               ];
+      },
+      onSelected: (option) {
+        switch (option) {
+          case PopupMenuOption.signIn:
+            ;
+          case PopupMenuOption.account:
+            ;
+          case PopupMenuOption.orders:
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const OrdersListScreen(),
+                ));
+        }
       },
     );
   }

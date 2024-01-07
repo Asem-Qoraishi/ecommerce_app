@@ -17,8 +17,9 @@ class CustomTextTheme {
     // Body text style
     bodyLarge: const TextStyle().copyWith(fontSize: 20, color: AppLightColors.primaryText, fontWeight: FontWeight.bold),
     bodyMedium:
-        const TextStyle().copyWith(fontSize: 16, color: AppLightColors.primaryText, fontWeight: FontWeight.bold),
-    bodySmall: const TextStyle().copyWith(fontSize: 14, color: AppLightColors.primaryText, fontWeight: FontWeight.bold),
+        const TextStyle().copyWith(fontSize: 16, color: AppLightColors.primaryText, fontWeight: FontWeight.normal),
+    bodySmall:
+        const TextStyle().copyWith(fontSize: 14, color: AppLightColors.secondryText, fontWeight: FontWeight.normal),
 
     // Lable text style
     labelLarge:
@@ -43,7 +44,7 @@ class CustomTextTheme {
     bodyMedium:
         const TextStyle().copyWith(fontSize: 16, color: AppDarkColors.primaryText, fontWeight: FontWeight.normal),
     bodySmall:
-        const TextStyle().copyWith(fontSize: 14, color: AppDarkColors.primaryText, fontWeight: FontWeight.normal),
+        const TextStyle().copyWith(fontSize: 14, color: AppDarkColors.secondryText, fontWeight: FontWeight.normal),
 
     // Lable text style
     labelLarge:

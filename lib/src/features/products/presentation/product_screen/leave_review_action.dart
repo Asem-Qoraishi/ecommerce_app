@@ -13,6 +13,7 @@ class LeaveReviewAction extends StatelessWidget {
   Widget build(BuildContext context) {
     //TODO: should read from datasource
     final purchase = Purchase(orderId: 'Abc', orderDate: DateTime.now());
+    //if the user purchased this product, can leave a review otherwise can't.
     if (purchase != null) {
       final formattedDate = HDateFromater.format(purchase.orderDate);
       return Column(
